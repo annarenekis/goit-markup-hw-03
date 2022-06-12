@@ -105,11 +105,11 @@ img,
 /* main */
 /* hero */
 .container {
+  margin-left: auto;
+  margin-right: auto;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  display: inline-block;
+  padding: 0 15px;
+ 
 }
 
 .hero {
@@ -155,11 +155,23 @@ img,
 .peculiarities > li:not(:last-child) {
   margin-right: 30px;
 }
+.peculiarities,
+.what-we-do-list,
+.our-team-list {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+}
 .peculiarities > li {
   width: 270px;
+
+  align-items: center;
+  justify-items: center;
 }
 .about-us {
-  padding: 70px 200px 0 200px;
+  padding-top: 94px;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 .about-us-title {
   margin-top: 0;
@@ -185,8 +197,8 @@ img,
 }
 .hidden {
   visibility: hidden;
-  margin: 0;
-  padding: 0;
+  position: fixed;
+  transform: scale(0);
 }
 /* section2 */
 .section-title {
@@ -200,14 +212,19 @@ img,
   color: var(--title-text-color);
 }
 .what-we-do {
-  padding: 94px 200px 94px 200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .what-we-do-list-item:not(:last-child) {
   margin-right: 30px;
 }
 /* section3 */
 .our-team-section {
-  padding: 94px 200px 94px 200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-right: auto;
+  margin-left: auto;
+  /* padding: 94px 200px 94px 200px; */
 }
 .our-team-text {
   margin-top: 0;
@@ -248,9 +265,11 @@ img,
 }
 
 /* footer */
+
 .footer {
   background-color: var(--additional-bg-color);
-  padding: 60px 200px;
+  padding-top: 60px;
+
 }
 .logo-footer {
   margin-bottom: 20px;
@@ -276,10 +295,6 @@ address {
 }
 /* portfolio */
 
-.portfolio-container {
-  margin-left: 200px;
-  margin-right: 200px;
-}
 .project-title {
   margin-bottom: 4px;
   font-weight: 700;
@@ -315,7 +330,6 @@ address {
   background-color: var(--primary-bg-color);
   margin-bottom: 30px;
 }
-
 /* filter-menu */
 .filter-menu {
   display: flex;
@@ -341,7 +355,7 @@ address {
   background-color: var(--accent-color);
 }
 .filter-menu {
-  margin-top: 70px;
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 .filter-menu > li:not(:first-child) {
