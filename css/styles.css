@@ -109,7 +109,6 @@ img,
   margin-right: auto;
   width: 1200px;
   padding: 0 15px;
- 
 }
 
 .hero {
@@ -266,24 +265,23 @@ img,
 
 /* footer */
 
-.footer {
+.footer.section {
   background-color: var(--additional-bg-color);
   padding-top: 60px;
+  padding-bottom: 60px;
+}
 
-}
-.logo-footer {
-  margin-bottom: 20px;
-}
 address {
   display: block;
   font-style: normal;
 }
-
+.footer-address {
+  margin-top: 20px;
+}
 .footer-item {
   color: var(--additional-text-color);
 }
-.footer-email,
-.physical-address {
+.footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-email,
@@ -317,6 +315,7 @@ address {
   padding: 0;
   justify-content: space-between;
 }
+
 .project-container {
   padding-bottom: 94px;
 }
@@ -330,6 +329,10 @@ address {
   background-color: var(--primary-bg-color);
   margin-bottom: 30px;
 }
+.flex-container.no-margin {
+  margin-bottom: 0;
+}
+
 /* filter-menu */
 .filter-menu {
   display: flex;
