@@ -21,6 +21,10 @@ body {
   padding: 0;
   margin: 0;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* header */
 
 header,
@@ -60,7 +64,8 @@ img,
   color: var(--title-text-color);
 }
 
-.nav.list .link {
+.nav.list .link,
+.contact-link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -158,8 +163,6 @@ img,
 .what-we-do-list,
 .our-team-list {
   display: flex;
-  width: 1200px;
-  margin: auto;
 }
 .peculiarities > li {
   width: 270px;
@@ -167,10 +170,8 @@ img,
   align-items: center;
   justify-items: center;
 }
-.about-us {
-  padding-top: 94px;
-  /* margin-right: auto;
-  margin-left: auto; */
+.what-we-do.section {
+  padding-top: 0;
 }
 .about-us-title {
   margin-top: 0;
@@ -210,20 +211,14 @@ img,
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.what-we-do {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .what-we-do-list-item:not(:last-child) {
   margin-right: 30px;
 }
 /* section3 */
 .our-team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-right: auto;
   margin-left: auto;
-  /* padding: 94px 200px 94px 200px; */
 }
 .our-team-text {
   margin-top: 0;
@@ -313,12 +308,9 @@ address {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-.project-container {
-  padding-bottom: 94px;
-}
 .project-decr {
   border: 1px solid #eeeeee;
   border-top: transparent;
@@ -332,7 +324,12 @@ address {
 .flex-container.no-margin {
   margin-bottom: 0;
 }
-
+.project-list-item {
+  margin-right: 30px;
+}
+.project-list-item:nth-child(3n + 3) {
+  margin-right: 0;
+}
 /* filter-menu */
 .filter-menu {
   display: flex;
@@ -358,7 +355,6 @@ address {
   background-color: var(--accent-color);
 }
 .filter-menu {
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .filter-menu > li:not(:first-child) {
